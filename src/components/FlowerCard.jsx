@@ -9,14 +9,21 @@ export default function FlowerCard({ flower, quantities, setQty }) {
       {/* Image area */}
       <div
         style={{
-          height: 130,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          height: 200,
+          overflow: "hidden",
           background: `${flower.accent}18`,
         }}
       >
-        <span style={{ fontSize: 64 }}>{flower.emoji}</span>
+        <img
+          src={flower.image}
+          alt={flower.name}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: flower.imagePosition || "center",
+          }}
+        />
       </div>
 
       {/* Body */}
