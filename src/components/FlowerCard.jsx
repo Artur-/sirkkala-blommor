@@ -37,11 +37,6 @@ export default function FlowerCard({ flower, quantities, setQty }) {
           }}
         >
           <div>
-            {flower.category && (
-              <p style={{ fontSize: 13, fontWeight: 700, color: flower.accent, opacity: 0.6, textTransform: "uppercase", letterSpacing: 1, marginBottom: 2 }}>
-                {flower.category}
-              </p>
-            )}
             <h3
               style={{
                 fontFamily: "'Playfair Display', serif",
@@ -51,7 +46,7 @@ export default function FlowerCard({ flower, quantities, setQty }) {
                 lineHeight: 1.2,
               }}
             >
-              {flower.name}
+              {flower.category ? `${flower.category} – ${flower.name}` : flower.name}
               {flower.detail && (
                 <span style={{ fontSize: 16, marginLeft: 6 }}>
                   {flower.detail}
