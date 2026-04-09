@@ -47,12 +47,12 @@ export default function FlowerCard({ flower, quantities, setQty }) {
               }}
             >
               {flower.category ? `${flower.category} – ${flower.name}` : flower.name}
-              {flower.detail && (
-                <span style={{ fontSize: 16, marginLeft: 6 }}>
-                  {flower.detail}
-                </span>
-              )}
             </h3>
+            {flower.detail && (
+              <p style={{ fontSize: 13, color: "#888", marginTop: 2, marginBottom: 0 }}>
+                {flower.detail}
+              </p>
+            )}
           </div>
           <span
             style={{
