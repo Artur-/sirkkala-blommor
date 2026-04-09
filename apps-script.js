@@ -50,6 +50,11 @@ function doPost(e) {
     ""   // Betalat — fylls i av användaren via knappen
   ]);
 
+  // Säkerställ att epost/telefon-kolumnen (C) sparas som text
+  var lastRow = sheet.getLastRow();
+  sheet.getRange(lastRow, 3).setNumberFormat("@");
+  sheet.getRange(lastRow, 3).setValue(data.epost);
+
   return ok();
 }
 
