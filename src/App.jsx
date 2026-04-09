@@ -123,9 +123,9 @@ export default function App() {
       {/* ── Intro ── */}
       <div
         style={{
-          maxWidth: 520,
+          maxWidth: 640,
           margin: "0 auto",
-          padding: "24px 24px 0",
+          padding: "12px 24px 0",
           textAlign: "center",
           fontSize: 16,
           lineHeight: 1.6,
