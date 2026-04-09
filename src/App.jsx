@@ -275,6 +275,22 @@ export default function App() {
       <button className="submit-btn" onClick={handleSubmit} disabled={!canSubmit}>
         {loading ? "Skickar..." : "🌿 Bekräfta köp"}
       </button>
+      {!canSubmit && !loading && (
+        <p
+          style={{
+            textAlign: "center",
+            fontSize: 13,
+            color: "#c0392b",
+            maxWidth: 480,
+            margin: "8px auto 0",
+            padding: "0 24px",
+          }}
+        >
+          {orderLines.length === 0 && "Välj minst en blomma. "}
+          {!namn.trim() && "Fyll i ditt namn. "}
+          {!epost.trim() && "Fyll i telefonnummer eller e-post."}
+        </p>
+      )}
 
       <p
         style={{
