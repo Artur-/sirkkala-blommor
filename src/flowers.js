@@ -1,18 +1,5 @@
 export const FLOWERS = [
   {
-    id: "jordgubbar",
-    name: "Jordgubbsampel",
-    category: null,
-    detail: "Ø25cm",
-    price: 19,
-    emoji: "🍓",
-    image: "/images/jordgubbar.jpg",
-    bg: "#fef0ee",
-    accent: "#c0392b",
-    colors: ["Jordgubbar"],
-    colorEmojis: ["🍓"],
-  },
-  {
     id: "miljoonakello",
     name: "Miljoonakello-ampel",
     category: null,
@@ -51,6 +38,19 @@ export const FLOWERS = [
     accent: "#d4197a",
     colors: ["Vit", "Röd", "Ljusröd"],
     colorEmojis: ["⚪", "🔴", "🩷"],
+  },
+  {
+    id: "jordgubbar",
+    name: "Jordgubbsampel",
+    category: null,
+    detail: "Ø25cm",
+    price: 19,
+    emoji: "🍓",
+    image: "/images/jordgubbar.jpg",
+    bg: "#fef0ee",
+    accent: "#c0392b",
+    colors: ["Jordgubbar"],
+    colorEmojis: ["🍓"],
   },
   {
     id: "orter",
