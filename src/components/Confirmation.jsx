@@ -94,55 +94,50 @@ export default function Confirmation({ summary }) {
         </div>
 
         {/* Payment instructions */}
-        <p style={{ fontSize: 17, color: "#333", marginBottom: 16 }}>
-          Betala med något av följande alternativ:
-        </p>
+        <div
+          style={{
+            background: "#f0f7eb",
+            borderRadius: 12,
+            padding: "16px 20px",
+            textAlign: "left",
+            marginBottom: 12,
+          }}
+        >
+          <p style={{ fontSize: 17, color: "#333", marginBottom: 8 }}>
+            Betala <strong>{totalSum}€</strong> med något av följande alternativ.
+          </p>
+          <p style={{ fontSize: 16, color: "#444", marginBottom: 0 }}>
+            Meddelande: <strong>"Blommor – {namn}"</strong>
+          </p>
+        </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 12, textAlign: "left", marginBottom: 28 }}>
-          {/* MobilePay */}
           <div
             style={{
-              background: "#f0f7eb",
+              background: "white",
               borderRadius: 12,
               padding: "16px 20px",
+              border: "1.5px solid #d5e8cc",
             }}
           >
-            <p style={{ fontSize: 17, color: "#333", marginBottom: 4 }}>
-              📱 <strong>MobilePay</strong> till nummer <strong>123</strong>
-            </p>
             <p style={{ fontSize: 17, color: "#333", marginBottom: 0 }}>
-              Summa: <strong>{totalSum}€</strong>
+              📱 <strong>MobilePay</strong> till nummer <strong style={{ whiteSpace: "nowrap" }}>0XX XXX XXXX</strong>
             </p>
           </div>
 
           <p style={{ fontSize: 15, color: "#999", textAlign: "center", margin: 0 }}>– eller –</p>
 
-          {/* Bank */}
           <div
             style={{
-              background: "#f0f7eb",
+              background: "white",
               borderRadius: 12,
               padding: "16px 20px",
+              border: "1.5px solid #d5e8cc",
             }}
           >
-            <p style={{ fontSize: 17, color: "#333", marginBottom: 4 }}>
+            <p style={{ fontSize: 17, color: "#333", marginBottom: 0 }}>
               🏦 <strong>Bankkonto</strong> FI1740550017530573
             </p>
-            <p style={{ fontSize: 17, color: "#333", marginBottom: 4 }}>
-              Summa: <strong>{totalSum}€</strong>
-            </p>
-            <div
-              style={{
-                padding: "8px 12px",
-                background: "white",
-                borderRadius: 8,
-                fontSize: 16,
-                color: "#444",
-                borderLeft: "3px solid #7aad5c",
-              }}
-            >
-              Meddelande: <strong>"Blommor – {namn}"</strong>
-            </div>
           </div>
         </div>
 
