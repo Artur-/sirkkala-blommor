@@ -133,7 +133,7 @@ export default function App() {
         }}
       >
         <p style={{ marginBottom: 8 }}>
-          Köp dina sommarblommor och understöd fjärdeklassen i Sirkkala skola!
+          Köp dina sommarblommor och understöd fjärde klassen i Sirkkala skolas lägerskola!
         </p>
         <p style={{ marginBottom: 8, fontWeight: 700 }}>
           Beställ senast 20.4.2026
@@ -141,6 +141,7 @@ export default function App() {
         <p style={{ marginBottom: 8 }}>
           Levereras till skolgården till gårdsfesten.
         </p>
+        <p>Obs! Bilderna föreställer blomsorterna och är endast riktgivande.</p>
         <p>Leverantör: Riipin puutarha</p>
       </div>
 
