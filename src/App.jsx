@@ -136,7 +136,7 @@ export default function App() {
           Köp dina sommarblommor och understöd fjärde klassen i Sirkkala skolas lägerskola!
         </p>
         <p style={{ marginBottom: 8, fontWeight: 700 }}>
-          Beställ senast 20.4.2026
+          Beställ senast 18.4.2026
         </p>
         <p style={{ marginBottom: 8 }}>
           Levereras till skolgården till gårdsfesten.
