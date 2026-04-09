@@ -135,6 +135,9 @@ export default function App() {
         <p style={{ marginBottom: 8 }}>
           Köp dina sommarblommor och understöd fjärdeklassen i Sirkkala skola!
         </p>
+        <p style={{ marginBottom: 8, fontWeight: 700 }}>
+          Beställ senast 20.4.2026
+        </p>
         <p style={{ marginBottom: 8 }}>
           Levereras till skolgården till gårdsfesten.
         </p>
@@ -256,6 +259,18 @@ export default function App() {
       </section>
 
       {/* ── Submit ── */}
+      <p
+        style={{
+          textAlign: "center",
+          fontSize: 14,
+          color: "#666",
+          maxWidth: 480,
+          margin: "0 auto 12px",
+          padding: "0 24px",
+        }}
+      >
+        Betalning sker med MobilePay eller direkt till konto, instruktioner på nästa sida.
+      </p>
       <button className="submit-btn" onClick={handleSubmit} disabled={!canSubmit}>
         {loading ? "Skickar..." : "🌿 Bekräfta köp"}
       </button>
