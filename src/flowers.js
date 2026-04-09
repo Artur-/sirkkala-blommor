@@ -62,8 +62,9 @@ export const FLOWERS = [
     image: "/images/timjan.png",
     bg: "#edf7ed",
     accent: "#27ae60",
-    colors: ["Oregano", "Timjan", "Mynta"],
+    colors: ["Basilika", "Timjan", "Mynta"],
     colorEmojis: ["🌿", "🌱", "🍃"],
+
   },
 ];
 

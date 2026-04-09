@@ -20,7 +20,7 @@ function doPost(e) {
       "Jordgubbar totalt",
       "Lumihiutale (vit)", "Lumihiutale (ljusröd)", "Lumihiutale (blå)", "Lumihiutale totalt",
       "Pelargon (vit)", "Pelargon (röd)", "Pelargon (ljusröd)", "Pelargon totalt",
-      "Örter (oregano)", "Örter (timjan)", "Örter (mynta)", "Örter totalt",
+      "Örter (basilika)", "Örter (timjan)", "Örter (mynta)", "Örter totalt",
       "Total summa (€)", "Betalat"
     ]);
   }
@@ -42,7 +42,7 @@ function doPost(e) {
     data["pelargon_Röd"]             || 0,
     data["pelargon_Ljusröd"]         || 0,
     data["pelargon_total"]           || 0,
-    data["orter_Oregano"]            || 0,
+    data["orter_Basilika"]           || 0,
     data["orter_Timjan"]             || 0,
     data["orter_Mynta"]              || 0,
     data["orter_total"]              || 0,
