@@ -1,5 +1,18 @@
 export const FLOWERS = [
   {
+    id: "pelargon",
+    name: "Pelargon 12cm",
+    category: null,
+    detail: null,
+    price: 4.5,
+    emoji: "🌸",
+    image: "/images/pelargon.png",
+    bg: "#fce8f0",
+    accent: "#d4197a",
+    colors: ["Vit", "Röd", "Ljusröd"],
+    colorEmojis: ["⚪", "🔴", "🩷"],
+  },
+  {
     id: "miljoonakello",
     name: "Miljoonakello AMPEL 25cm",
     category: null,
@@ -27,19 +40,6 @@ export const FLOWERS = [
     colorEmojis: ["⚪", "🩷", "🔵"],
   },
   {
-    id: "pelargon",
-    name: "Pelargon 12cm",
-    category: null,
-    detail: null,
-    price: 4.5,
-    emoji: "🌸",
-    image: "/images/pelargon.png",
-    bg: "#fce8f0",
-    accent: "#d4197a",
-    colors: ["Vit", "Röd", "Ljusröd"],
-    colorEmojis: ["⚪", "🔴", "🩷"],
-  },
-  {
     id: "jordgubbar",
     name: "Jordgubbsampel 25cm",
     category: null,
@@ -64,7 +64,6 @@ export const FLOWERS = [
     accent: "#27ae60",
     colors: ["Timjan", "Basilika", "Mynta"],
     colorEmojis: ["🌱", "🌿", "🍃"],
-
   },
 ];
 
