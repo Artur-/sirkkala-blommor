@@ -12,6 +12,7 @@ export default function App() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [orderSummary, setOrderSummary] = useState(null);
+  const [showPayment, setShowPayment] = useState(false);
 
   const setQty = (flowerId, color, value) => {
     const v = Math.max(0, parseInt(value) || 0);
@@ -185,14 +186,14 @@ export default function App() {
         <input
           className="text-input"
           type="text"
-          placeholder="Ditt namn"
+          placeholder="Ditt namn *"
           value={namn}
           onChange={(e) => setNamn(e.target.value)}
         />
         <input
           className="text-input"
-          type="email"
-          placeholder="E-postadress"
+          type="text"
+          placeholder="Telefonnummer eller e-post *"
           value={epost}
           onChange={(e) => setEpost(e.target.value)}
         />
@@ -269,11 +270,77 @@ export default function App() {
           padding: "0 24px",
         }}
       >
-        Betalning sker med MobilePay eller direkt till konto, instruktioner på nästa sida.
+        Betalning sker med MobilePay eller direkt till konto.
       </p>
       <button className="submit-btn" onClick={handleSubmit} disabled={!canSubmit}>
         {loading ? "Skickar..." : "🌿 Bekräfta köp"}
       </button>
+
+      <p
+        style={{
+          textAlign: "center",
+          fontSize: 14,
+          maxWidth: 480,
+          margin: "16px auto 0",
+          padding: "0 24px",
+        }}
+      >
+        <span
+          onClick={() => setShowPayment(!showPayment)}
+          style={{ color: "#2d5e1a", cursor: "pointer", textDecoration: "underline" }}
+        >
+          {showPayment ? "Dölj betalningsuppgifter" : "Visa betalningsuppgifter"}
+        </span>
+      </p>
+      {showPayment && (
+        <div
+          style={{
+            maxWidth: 480,
+            margin: "8px auto 0",
+            padding: "0 24px",
+            display: "flex",
+            flexDirection: "column",
+            gap: 8,
+          }}
+        >
+          <div
+            style={{
+              background: "white",
+              borderRadius: 12,
+              padding: "14px 18px",
+              border: "1.5px solid #d5e8cc",
+              fontSize: 15,
+              color: "#333",
+            }}
+          >
+            📱 <strong>MobilePay</strong> till nummer <strong style={{ whiteSpace: "nowrap" }}>0XX XXX XXXX</strong>
+          </div>
+          <div
+            style={{
+              background: "white",
+              borderRadius: 12,
+              padding: "14px 18px",
+              border: "1.5px solid #d5e8cc",
+              fontSize: 15,
+              color: "#333",
+            }}
+          >
+            🏦 <strong>Bankkonto</strong> FI1740550017530573
+          </div>
+          <div
+            style={{
+              background: "#f0f7eb",
+              borderRadius: 8,
+              padding: "8px 14px",
+              fontSize: 14,
+              color: "#444",
+              borderLeft: "3px solid #7aad5c",
+            }}
+          >
+            Meddelande: <strong>"Blommor – ditt namn"</strong>
+          </div>
+        </div>
+      )}
 
       <p
         style={{
