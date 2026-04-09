@@ -35,14 +35,14 @@ export default function Confirmation({ summary }) {
         <h2
           style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: 28,
+            fontSize: 30,
             color: "#2d4a22",
             marginBottom: 6,
           }}
         >
           Tack för din beställning!
         </h2>
-        <p style={{ color: "#888", fontSize: 15, marginBottom: 24 }}>{namn}</p>
+        <p style={{ color: "#888", fontSize: 17, marginBottom: 24 }}>{namn}</p>
 
         {/* Order lines */}
         <div
@@ -62,10 +62,10 @@ export default function Confirmation({ summary }) {
                 alignItems: "center",
                 gap: 10,
                 padding: "6px 0",
-                fontSize: 15,
+                fontSize: 17,
               }}
             >
-              <span style={{ fontSize: 22 }}>{flower.emoji}</span>
+              <span style={{ fontSize: 24 }}>{flower.emoji}</span>
               <span style={{ flex: 1, color: "#333" }}>
                 {flower.category ? `${flower.category} \u2013 ` : ""}
                 {flower.name} \u2013 {total} st ({colors.join(", ")})
@@ -80,7 +80,7 @@ export default function Confirmation({ summary }) {
               display: "flex",
               justifyContent: "space-between",
               fontWeight: 700,
-              fontSize: 19,
+              fontSize: 21,
               fontFamily: "'Playfair Display', serif",
               color: "#2d4a22",
               paddingTop: 12,
@@ -103,13 +103,13 @@ export default function Confirmation({ summary }) {
             marginBottom: 28,
           }}
         >
-          <p style={{ marginBottom: 12, fontSize: 15, color: "#333" }}>
+          <p style={{ marginBottom: 12, fontSize: 17, color: "#333" }}>
             Vänligen betala in <strong>{totalSum}€</strong> med:
           </p>
-          <p style={{ marginBottom: 8, fontSize: 15, color: "#333" }}>
+          <p style={{ marginBottom: 8, fontSize: 17, color: "#333" }}>
             📱 <strong>MobilePay</strong> till nummer <strong>123</strong>
           </p>
-          <p style={{ marginBottom: 0, fontSize: 15, color: "#333" }}>
+          <p style={{ marginBottom: 0, fontSize: 17, color: "#333" }}>
             🏦 <strong>Bankkonto</strong> 123-123
           </p>
           <div
@@ -118,7 +118,7 @@ export default function Confirmation({ summary }) {
               padding: "10px 14px",
               background: "white",
               borderRadius: 8,
-              fontSize: 14,
+              fontSize: 16,
               color: "#444",
               borderLeft: "3px solid #7aad5c",
             }}
@@ -137,12 +137,12 @@ export default function Confirmation({ summary }) {
               padding: "14px 24px",
               background: "#f0f7eb",
               borderRadius: 12,
-              fontSize: 16,
+              fontSize: 18,
               fontWeight: 700,
               color: "#2d4a22",
             }}
           >
-            <span style={{ fontSize: 22 }}>✅</span>
+            <span style={{ fontSize: 24 }}>✅</span>
             Betalning registrerad!
           </div>
         ) : (
@@ -159,7 +159,7 @@ export default function Confirmation({ summary }) {
               color: "white",
               border: "none",
               borderRadius: 12,
-              fontSize: 16,
+              fontSize: 18,
               fontFamily: "'Lato', sans-serif",
               fontWeight: 700,
               cursor: paymentState === "loading" ? "not-allowed" : "pointer",

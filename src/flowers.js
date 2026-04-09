@@ -27,7 +27,7 @@ export const FLOWERS = [
     id: "lumihiutale",
     name: "Lumihiutale",
     category: "Ampel",
-    detail: "Snöflinga, Ø25cm",
+    detail: "Ø25cm",
     price: 17,
     emoji: "❄️",
     bg: "#eef4fb",

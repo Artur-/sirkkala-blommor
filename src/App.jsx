@@ -99,7 +99,7 @@ export default function App() {
         </h1>
         <p
           style={{
-            fontSize: 14,
+            fontSize: 16,
             fontWeight: 300,
             color: "#6b7c5a",
             marginBottom: 24,
@@ -119,6 +119,27 @@ export default function App() {
           }}
         />
       </header>
+
+      {/* ── Intro ── */}
+      <div
+        style={{
+          maxWidth: 520,
+          margin: "0 auto",
+          padding: "24px 24px 0",
+          textAlign: "center",
+          fontSize: 16,
+          lineHeight: 1.6,
+          color: "#4a4a4a",
+        }}
+      >
+        <p style={{ marginBottom: 8 }}>
+          Köp dina sommarblommor och understöd fjärdeklassen i Sirkkala skola!
+        </p>
+        <p style={{ marginBottom: 8 }}>
+          Levereras till skolgården till gårdsfesten.
+        </p>
+        <p>Leverantör: Riipin puutarha</p>
+      </div>
 
       {/* ── Flower Cards ── */}
       <div
@@ -150,7 +171,7 @@ export default function App() {
         <h2
           style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: 22,
+            fontSize: 24,
             fontWeight: 700,
             color: "#2d4a22",
             marginBottom: 14,
@@ -182,7 +203,7 @@ export default function App() {
         <h2
           style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: 22,
+            fontSize: 24,
             fontWeight: 700,
             color: "#2d4a22",
             marginBottom: 14,
@@ -191,7 +212,7 @@ export default function App() {
           Sammanfattning
         </h2>
         {orderLines.length === 0 ? (
-          <p style={{ color: "#aaa", fontStyle: "italic", fontSize: 14 }}>
+          <p style={{ color: "#aaa", fontStyle: "italic", fontSize: 16 }}>
             Inga blommor valda ännu.
           </p>
         ) : (
@@ -204,7 +225,7 @@ export default function App() {
                   justifyContent: "space-between",
                   padding: "8px 0",
                   borderBottom: "1px solid #e8e8e0",
-                  fontSize: 15,
+                  fontSize: 17,
                 }}
               >
                 <span>
@@ -220,7 +241,7 @@ export default function App() {
                 display: "flex",
                 justifyContent: "space-between",
                 fontWeight: 700,
-                fontSize: 19,
+                fontSize: 21,
                 fontFamily: "'Playfair Display', serif",
                 color: "#2d4a22",
                 paddingTop: 12,
@@ -243,7 +264,7 @@ export default function App() {
         style={{
           textAlign: "center",
           color: "#bbb",
-          fontSize: 11,
+          fontSize: 13,
           marginTop: 32,
           letterSpacing: 2,
           textTransform: "uppercase",

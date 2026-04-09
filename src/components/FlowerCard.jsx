@@ -31,30 +31,30 @@ export default function FlowerCard({ flower, quantities, setQty }) {
         >
           <div>
             {flower.category && (
-              <p style={{ fontSize: 11, fontWeight: 700, color: flower.accent, opacity: 0.6, textTransform: "uppercase", letterSpacing: 1, marginBottom: 2 }}>
+              <p style={{ fontSize: 13, fontWeight: 700, color: flower.accent, opacity: 0.6, textTransform: "uppercase", letterSpacing: 1, marginBottom: 2 }}>
                 {flower.category}
               </p>
             )}
             <h3
               style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: 18,
+                fontSize: 20,
                 fontWeight: 700,
                 color: flower.accent,
                 lineHeight: 1.2,
               }}
             >
               {flower.name}
+              {flower.detail && (
+                <span style={{ fontSize: 16, marginLeft: 6 }}>
+                  {flower.detail}
+                </span>
+              )}
             </h3>
-            {flower.detail && (
-              <p style={{ fontSize: 11, color: "#999", marginTop: 2 }}>
-                {flower.detail}
-              </p>
-            )}
           </div>
           <span
             style={{
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: 700,
               color: "#888",
               background: "rgba(0,0,0,0.06)",
@@ -78,7 +78,7 @@ export default function FlowerCard({ flower, quantities, setQty }) {
                 alignItems: "center",
               }}
             >
-              <span style={{ fontSize: 14, color: "#444" }}>
+              <span style={{ fontSize: 16, color: "#444" }}>
                 {flower.colorEmojis[i]} {color}
               </span>
               <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
@@ -103,7 +103,7 @@ export default function FlowerCard({ flower, quantities, setQty }) {
                     textAlign: "center",
                     border: "1.5px solid #ccc",
                     borderRadius: 6,
-                    fontSize: 14,
+                    fontSize: 16,
                     fontWeight: 700,
                     background: "white",
                     color: "#222",
@@ -132,7 +132,7 @@ export default function FlowerCard({ flower, quantities, setQty }) {
           <div
             style={{
               marginTop: 12,
-              fontSize: 13,
+              fontSize: 15,
               textAlign: "right",
               paddingTop: 8,
               borderTop: "1px solid rgba(0,0,0,0.08)",
