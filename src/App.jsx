@@ -141,8 +141,9 @@ export default function App() {
         <p style={{ marginBottom: 8 }}>
           Levereras till skolgården till gårdsfesten.
         </p>
+        <p style={{ marginBottom: 8 }}>
+          Leverantör: Riipin puutarha</p>
         <p>Obs! Bilderna föreställer blomsorterna och är endast riktgivande.</p>
-        <p>Leverantör: Riipin puutarha</p>
       </div>
 
       {/* ── Flower Cards ── */}
