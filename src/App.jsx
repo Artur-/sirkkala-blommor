@@ -282,7 +282,7 @@ export default function App() {
           padding: "0 24px",
         }}
       >
-        Betalning sker med MobilePay eller direkt till konto.
+        Betalning sker med MobilePay eller direkt till konto. Betalningsuppgifter visas på nästa sida efter att beställningen är bekräftad.
       </p>
       <button className="submit-btn" onClick={handleSubmit} disabled={!canSubmit}>
         {loading ? "Skickar..." : "🌿 Bekräfta köp"}
