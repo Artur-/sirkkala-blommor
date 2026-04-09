@@ -1,7 +1,7 @@
 export const FLOWERS = [
   {
     id: "pelargon",
-    name: "Pelargon 12cm",
+    name: "Pelargon ⌀12cm",
     category: null,
     detail: null,
     price: 4.5,
@@ -14,7 +14,7 @@ export const FLOWERS = [
   },
   {
     id: "miljoonakello",
-    name: "Miljoonakello AMPEL 25cm",
+    name: "Miljoonakello AMPEL ⌀25cm",
     category: null,
     detail: null,
     price: 19,
@@ -27,7 +27,7 @@ export const FLOWERS = [
   },
   {
     id: "lumihiutale",
-    name: "Lumihiutale AMPEL 25cm",
+    name: "Lumihiutale AMPEL ⌀25cm",
     category: null,
     detail: null,
     price: 19,
@@ -41,7 +41,7 @@ export const FLOWERS = [
   },
   {
     id: "jordgubbar",
-    name: "Jordgubbsampel 25cm",
+    name: "Jordgubbsampel ⌀25cm",
     category: null,
     detail: null,
     price: 19,
@@ -54,7 +54,7 @@ export const FLOWERS = [
   },
   {
     id: "orter",
-    name: "Färska örter 10.5cm",
+    name: "Färska örter ⌀10.5cm",
     category: null,
     detail: null,
     price: 4,
