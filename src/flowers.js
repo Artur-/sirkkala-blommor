@@ -1,8 +1,8 @@
 export const FLOWERS = [
   {
     id: "jordgubbar",
-    name: "Jordgubbar",
-    category: "Ampel",
+    name: "Jordgubbsampel",
+    category: null,
     detail: "Ø25cm",
     price: 19,
     emoji: "🍓",
@@ -14,8 +14,8 @@ export const FLOWERS = [
   },
   {
     id: "miljoonakello",
-    name: "Miljoonakello",
-    category: "Ampel",
+    name: "Miljoonakello-ampel",
+    category: null,
     detail: "Ø25cm",
     price: 19,
     emoji: "🌺",
@@ -27,8 +27,8 @@ export const FLOWERS = [
   },
   {
     id: "lumihiutale",
-    name: "Lumihiutale",
-    category: "Ampel",
+    name: "Lumihiutale-ampel",
+    category: null,
     detail: "Ø25cm",
     price: 17,
     emoji: "🌼",
@@ -54,7 +54,7 @@ export const FLOWERS = [
   },
   {
     id: "orter",
-    name: "Örter",
+    name: "Färska örter",
     category: null,
     detail: "Ø10.5cm",
     price: 4.5,
