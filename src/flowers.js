@@ -41,9 +41,9 @@ export const FLOWERS = [
   },
   {
     id: "jordgubbar",
-    name: "Jordgubbsampel",
+    name: "Jordgubbsampel 25cm",
     category: null,
-    detail: "Ø25cm",
+    detail: null,
     price: 19,
     emoji: "🍓",
     image: "/images/jordgubbar.jpg",
