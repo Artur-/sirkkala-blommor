@@ -167,6 +167,17 @@ export default function App() {
           />
         ))}
       </div>
+      <p
+        style={{
+          textAlign: "center",
+          fontSize: 13,
+          color: "#999",
+          margin: "-12px 0 20px",
+          padding: "0 24px",
+        }}
+      >
+        ⌀ cm är krukans diameter
+      </p>
 
       {/* ── Contact ── */}
       <section
