@@ -67,8 +67,8 @@ export default function Confirmation({ summary }) {
             >
               <span style={{ fontSize: 24 }}>{flower.emoji}</span>
               <span style={{ flex: 1, color: "#333" }}>
-                {flower.category ? `${flower.category} \u2013 ` : ""}
-                {flower.name} \u2013 {total} st ({colors.join(", ")})
+                {flower.category ? `${flower.category} – ` : ""}
+                {flower.name} – {total} st ({colors.join(", ")})
               </span>
               <span style={{ fontWeight: 700, color: "#2d4a22" }}>
                 {total * flower.price}€
@@ -123,7 +123,7 @@ export default function Confirmation({ summary }) {
               borderLeft: "3px solid #7aad5c",
             }}
           >
-            Meddelande: <strong>"Blommor \u2013 {namn}"</strong>
+            Meddelande: <strong>"Blommor – {namn}"</strong>
           </div>
         </div>
 
