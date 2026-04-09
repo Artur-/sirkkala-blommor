@@ -56,10 +56,18 @@ function doPost(e) {
 // Hitta raden på namn+epost och sätt ✓ i Betalat-kolumnen
 function markBetalat(sheet, namn, epost) {
   const data = sheet.getDataRange().getValues();
-  for (let i = 1; i < data.length; i++) {
-    if (data[i][1] === namn && data[i][2] === epost) {
-      const lastCol = sheet.getLastColumn();
-      sheet.getRange(i + 1, lastCol).setValue("✓");
+  const headers = data[0];
+  const betalatCol = headers.indexOf("Betalat");
+  if (betalatCol === -1) return;
+
+  const namnTrim = (namn || "").toString().trim().toLowerCase();
+  const epostTrim = (epost || "").toString().trim().toLowerCase();
+
+  for (let i = data.length - 1; i >= 1; i--) {
+    const rowNamn = (data[i][1] || "").toString().trim().toLowerCase();
+    const rowEpost = (data[i][2] || "").toString().trim().toLowerCase();
+    if (rowNamn === namnTrim && rowEpost === epostTrim) {
+      sheet.getRange(i + 1, betalatCol + 1).setValue("✓");
       return;
     }
   }
