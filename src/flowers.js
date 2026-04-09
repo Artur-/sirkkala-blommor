@@ -29,7 +29,7 @@ export const FLOWERS = [
     category: "Ampel",
     detail: "Ø25cm",
     price: 17,
-    emoji: "❄️",
+    emoji: "🌼",
     bg: "#eef4fb",
     accent: "#2980b9",
     colors: ["Vit", "Ljusröd", "Blå"],

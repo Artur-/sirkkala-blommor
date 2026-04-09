@@ -47,9 +47,9 @@ export default function App() {
     const payload = { namn, epost, timestamp: new Date().toISOString() };
     FLOWERS.forEach((f) => {
       f.colors.forEach((c) => {
-        payload[`${f.id}_${c}`] = quantities[f.id][c];
+        payload[`${f.id}_${c}`] = quantities[f.id][c] || "";
       });
-      payload[`${f.id}_total`] = totalPerFlower(f);
+      payload[`${f.id}_total`] = totalPerFlower(f) || "";
     });
     payload.total_summa = totalSum;
 
