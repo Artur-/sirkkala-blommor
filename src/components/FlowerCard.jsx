@@ -110,7 +110,7 @@ export default function FlowerCard({ flower, quantities, setQty }) {
                     background: "white",
                     color: "#222",
                   }}
-                  value={quantities[flower.id][color] || 0}
+                  value={quantities[flower.id][color] === "" ? "" : (quantities[flower.id][color] || 0)}
                   onChange={(e) => setQty(flower.id, color, e.target.value)}
                 />
                 <button

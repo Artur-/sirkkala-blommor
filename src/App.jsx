@@ -14,7 +14,7 @@ export default function App() {
   const [orderSummary, setOrderSummary] = useState(null);
 
   const setQty = (flowerId, color, value) => {
-    const v = Math.max(0, parseInt(value) || 0);
+    const v = value === "" ? "" : Math.max(0, parseInt(value) || 0);
     setQuantities((prev) => ({
       ...prev,
       [flowerId]: { ...prev[flowerId], [color]: v },
