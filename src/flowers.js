@@ -1,9 +1,9 @@
 export const FLOWERS = [
   {
     id: "miljoonakello",
-    name: "Miljoonakello-ampel",
+    name: "Miljoonakello AMPEL 25cm",
     category: null,
-    detail: "Ø25cm",
+    detail: null,
     price: 19,
     emoji: "🌺",
     image: "/images/miljoonakello.png",
@@ -14,9 +14,9 @@ export const FLOWERS = [
   },
   {
     id: "lumihiutale",
-    name: "Lumihiutale-ampel",
+    name: "Lumihiutale AMPEL 25cm",
     category: null,
-    detail: "Ø25cm",
+    detail: null,
     price: 17,
     emoji: "🌼",
     image: "/images/lumihiutale.jpg",
