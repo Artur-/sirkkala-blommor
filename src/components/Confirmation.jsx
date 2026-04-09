@@ -118,10 +118,28 @@ export default function Confirmation({ summary }) {
               borderRadius: 12,
               padding: "16px 20px",
               border: "1.5px solid #d5e8cc",
+              textAlign: "center",
             }}
           >
-            <p style={{ fontSize: 17, color: "#333", marginBottom: 0 }}>
+            <p style={{ fontSize: 17, color: "#333", marginBottom: 12, textAlign: "left" }}>
               📱 <strong>MobilePay</strong> till nummer <strong style={{ whiteSpace: "nowrap" }}>0XX XXX XXXX</strong>
+            </p>
+            <a href="https://qr.mobilepay.fi/p/93iSOTVHC9n5EApY5jfaP9dj-vDEoEwgz--NN5FD3toR77z7qhNhAOagP9gitvaxOb7BRCyXqaPQAoi75OLz">
+              <img
+                src="/images/mobilepay-qr.png"
+                alt="MobilePay QR-kod"
+                style={{ width: 180, height: 180, borderRadius: 8 }}
+              />
+            </a>
+            <p style={{ fontSize: 13, color: "#888", marginTop: 8, marginBottom: 0 }}>
+              Skanna QR-koden eller{" "}
+              <a
+                href="https://qr.mobilepay.fi/p/93iSOTVHC9n5EApY5jfaP9dj-vDEoEwgz--NN5FD3toR77z7qhNhAOagP9gitvaxOb7BRCyXqaPQAoi75OLz"
+                style={{ color: "#2d5e1a" }}
+              >
+                tryck här
+              </a>
+              {" "}på mobilen.
             </p>
           </div>
 
