@@ -28,9 +28,9 @@ export const FLOWERS = [
   },
   {
     id: "pelargon",
-    name: "Pelargon",
+    name: "Pelargon 12cm",
     category: null,
-    detail: "Ø12cm",
+    detail: null,
     price: 4.5,
     emoji: "🌸",
     image: "/images/pelargon.png",
@@ -54,16 +54,16 @@ export const FLOWERS = [
   },
   {
     id: "orter",
-    name: "Färska örter",
+    name: "Färska örter 10.5cm",
     category: null,
-    detail: "Ø10.5cm",
+    detail: null,
     price: 4,
     emoji: "🌿",
     image: "/images/timjan.png",
     bg: "#edf7ed",
     accent: "#27ae60",
-    colors: ["Basilika", "Timjan", "Mynta"],
-    colorEmojis: ["🌿", "🌱", "🍃"],
+    colors: ["Timjan", "Basilika", "Mynta"],
+    colorEmojis: ["🌱", "🌿", "🍃"],
 
   },
 ];
