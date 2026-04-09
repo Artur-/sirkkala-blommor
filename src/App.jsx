@@ -307,22 +307,6 @@ export default function App() {
       <p
         style={{
           textAlign: "center",
-          fontSize: 14,
-          color: "#888",
-          maxWidth: 480,
-          margin: "16px auto 0",
-          padding: "0 24px",
-        }}
-      >
-        Frågor eller problem? Kontakta{" "}
-        <a href="mailto:example@example.com" style={{ color: "#2d5e1a" }}>
-          example@example.com
-        </a>
-      </p>
-
-      <p
-        style={{
-          textAlign: "center",
           color: "#bbb",
           fontSize: 13,
           marginTop: 32,
