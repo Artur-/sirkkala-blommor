@@ -121,8 +121,11 @@ export default function Confirmation({ summary }) {
               textAlign: "center",
             }}
           >
-            <p style={{ fontSize: 17, color: "#333", marginBottom: 12, textAlign: "left" }}>
+            <p style={{ fontSize: 17, color: "#333", marginBottom: 4, textAlign: "left" }}>
               📱 <strong>MobilePay</strong> till nummer <strong style={{ whiteSpace: "nowrap" }}>0XX XXX XXXX</strong>
+            </p>
+            <p style={{ fontSize: 15, color: "#555", marginBottom: 12, textAlign: "left" }}>
+              Namn: <strong>Name Placeholder</strong>
             </p>
             <a href="https://qr.mobilepay.fi/p/93iSOTVHC9n5EApY5jfaP9dj-vDEoEwgz--NN5FD3toR77z7qhNhAOagP9gitvaxOb7BRCyXqaPQAoi75OLz">
               <img
@@ -153,8 +156,11 @@ export default function Confirmation({ summary }) {
               border: "1.5px solid #d5e8cc",
             }}
           >
-            <p style={{ fontSize: 17, color: "#333", marginBottom: 0 }}>
+            <p style={{ fontSize: 17, color: "#333", marginBottom: 4 }}>
               🏦 <strong>Bankkonto</strong> FI1740550017530573
+            </p>
+            <p style={{ fontSize: 15, color: "#555", marginBottom: 0 }}>
+              Namn: <strong>Name Placeholder</strong>
             </p>
           </div>
         </div>
