@@ -7,6 +7,7 @@ export const FLOWERS = [
     price: 4.5,
     emoji: "🌸",
     image: "/images/pelargon.png",
+    imagePosition: "top",
     bg: "#fce8f0",
     accent: "#d4197a",
     colors: ["Vit", "Röd", "Ljusröd"],
